@@ -13,5 +13,5 @@ submission = pd.read_csv( submission_file )
 12 # Load ground truth ( hidden )
 truth = pd.read_csv(truth_file)
 # Compute F1 score
-score = f1_score(truth["label"], submission["label"], average="macro")
+score = f1_score(truth["cell_type"], submission["cell_type"], average="macro")
 print(f"SCORE={score:.4f}")

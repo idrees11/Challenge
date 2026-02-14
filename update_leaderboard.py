@@ -3,7 +3,7 @@ import subprocess
 
 # Run scoring on latest submission
 result = subprocess.check_output(
-    ["python", "scoring_script.py", "submissions/latest.csv", "test_ground_truth.csv"],
+    ["python", "scoring_script.py", "submissions/submission.csv", "data/ground_truth.csv"],
     text=True
 )
 
