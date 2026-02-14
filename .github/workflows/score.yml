@@ -62,8 +62,12 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+          git fetch origin main
+          git checkout main
+          git merge ${{ github.sha }} --no-edit || true
+
           git add leaderboard/leaderboard.md leaderboard/leaderboard.csv
           git commit -m "Update leaderboard via workflow" || echo "No changes to commit"
-          git push origin HEAD:main
-
+          git push origin main
 
