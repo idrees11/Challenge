@@ -69,9 +69,6 @@ As for this task, we have altered samples from this data to present it for a  GN
 - **`edges.csv`** - Describes the communication between the cells
 Please review the baseline code to help you better navigate the data.
 ---
-
-
-
 ## 🚫 Constraints
 
 ###  You CANNOT
